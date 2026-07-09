@@ -6,14 +6,14 @@ import { motion } from 'motion/react';
 export default function About() {
   const experiences = [
     {
-      period: '2023 - Sekarang',
+      period: '2025 - Sekarang',
       role: 'IT Support & Systems Maintenance',
       company: 'Sentral Cargo (Jakarta)',
       description: 'Menjaga keandalan infrastruktur IT, jaringan logistik cabang utama, integrasi sistem CCTV, CCTV Investigation Request, serta merancang aplikasi pelaporan BBM armada internal berbasis Next.js & Supabase untuk mengeliminasi fraud manual.',
       color: 'border-brand-orange text-brand-orange bg-brand-orange/5'
     },
     {
-      period: '2020 - 2023',
+      period: '2022 - 2025',
       role: 'Application Support Specialist (L1 / L2)',
       company: 'Telkom Indonesia',
       description: 'Selama 3 tahun bertugas memantau performa ribuan user application, meng-audit log error server, menyelesaikan tiket eskalasi teknis tingkat lanjut, dan menulis query SQL harian untuk pelaporan operasional terpadu.',

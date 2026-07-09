@@ -17,7 +17,8 @@ export const PROJECTS_DATA: Project[] = [
     techStack: ['React', 'TypeScript', 'Supabase', 'Tailwind CSS', 'Recharts'],
     role: 'Solo Full-stack Developer',
     category: 'Personal Project',
-    imageUrl: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80'
+    imageUrl: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80',
+    projectUrl: 'https://catetanduitgue.vercel.app/'
   },
   {
     id: 'cctv-investigation',
@@ -53,7 +54,8 @@ export const PROJECTS_DATA: Project[] = [
     techStack: ['React', 'Next.js', 'Node.js', 'Supabase', 'Tailwind CSS', 'PostgreSQL'],
     role: 'Freelance Full-stack Developer',
     category: 'Client Project',
-    imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80'
+    imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
+    projectUrl: 'https://globalinspire.id/'
   },
   {
     id: 'sdit-darunnajah',
@@ -71,7 +73,8 @@ export const PROJECTS_DATA: Project[] = [
     techStack: ['React', 'Vite', 'Supabase', 'Tailwind CSS', 'Framer Motion'],
     role: 'UI/UX Designer & Frontend Developer',
     category: 'Client Project',
-    imageUrl: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80'
+    imageUrl: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80',
+    projectUrl: 'https://sditdarunnajahseluma.vercel.app/'
   },
   {
     id: 'receipt-scanner',
@@ -100,14 +103,14 @@ export const PROJECTS_DATA: Project[] = [
     solution: 'Mendesain website showcase minimalis estetik, lengkap dengan filter lokasi dan harga, serta CMS admin sederhana bagi agen untuk mengunggah dan mengarsipkan katalog unit rumah secara mandiri.',
     features: [
       'Landing page minimalis premium dengan galeri foto properti resolusi tinggi',
-      'Filter pencarian interaktif berbasis Tipe Rumah, Harga, Lokasi, dan Status Terjual',
       'Sistem manajemen katalog (CMS) bagi agen dengan kompresi gambar otomatis',
       'Integrasi tombol reservasi survei langsung terhubung ke WhatsApp Agen terkait'
     ],
-    techStack: ['React', 'Vite', 'Supabase Storage & Database', 'Tailwind CSS'],
+    techStack: ['React', 'Vite', 'Supabase Storage & Database', 'Tailwind CSS', 'Cloudinary'],
     role: 'Solo Developer',
     category: 'Client Project',
-    imageUrl: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80'
+    imageUrl: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80',
+    projectUrl: 'https://www.muthialiving.com/'
   },
   {
     id: 'labbaik',
