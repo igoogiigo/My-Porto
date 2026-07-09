@@ -24,7 +24,7 @@ export default function ProjectDetailModal({ project, onClose }: ProjectDetailMo
   if (!project) return null;
 
   // Pre-filled WA text based on project interest
-  const waUrl = `https://wa.me/6281382876886?text=Halo%20Igo,%20gw%20tertarik%20sama%20studi%20kasus%20project%20*${encodeURIComponent(project.title)}*%20di%20portfolio%20lu.%20Bisa%20jelasin%20lebih%20lanjut?`;
+  const waUrl = `https://wa.me/6281211112222?text=Halo%20Igo,%20gw%20tertarik%20sama%20studi%20kasus%20project%20*${encodeURIComponent(project.title)}*%20di%20portfolio%20lu.%20Bisa%20jelasin%20lebih%20lanjut?`;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto">

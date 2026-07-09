@@ -58,7 +58,7 @@ export default function Home() {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
               <a
-                href="https://wa.me/6281382876886?text=Halo%20Igo,%20gw%20nemu%20portfolio%20lu%20dan%20tertarik%20buat%20ngobrol%20nih!"
+                href="https://wa.me/6281211112222?text=Halo%20Igo,%20gw%20nemu%20portfolio%20lu%20dan%20tertarik%20buat%20ngobrol%20nih!"
                 target="_blank"
                 referrerPolicy="no-referrer"
                 className="px-8 py-4 bg-brand-purple text-white rounded-2xl font-display font-bold text-base border-2 border-slate-900 shadow-[4px_4px_0px_0px_#0f172a] hover:bg-brand-orange hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_#0f172a] transition-all flex items-center justify-center gap-2 cursor-pointer"
@@ -258,7 +258,7 @@ export default function Home() {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="https://wa.me/6281382876886?text=Halo%20Igo,%20gw%20nemu%20portfolio%20lu%20dan%20tertarik%20buat%20ngobrol%20nih!"
+            href="https://wa.me/6281211112222?text=Halo%20Igo,%20gw%20nemu%20portfolio%20lu%20dan%20tertarik%20buat%20ngobrol%20nih!"
             target="_blank"
             referrerPolicy="no-referrer"
             className="w-full sm:w-auto px-8 py-4 bg-slate-900 hover:bg-brand-purple text-white rounded-2xl font-display font-bold text-base border-2 border-slate-900 shadow-[4px_4px_0px_0px_#0f172a] hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 cursor-pointer"

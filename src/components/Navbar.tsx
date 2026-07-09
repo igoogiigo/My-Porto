@@ -51,7 +51,7 @@ export default function Navbar() {
             
             {/* Quick WhatsApp CTA */}
             <a
-              href="https://wa.me/6281382876886?text=Halo%20Igo,%20gw%20tertarik%20buat%20bikin%20website%20nih!"
+              href="https://wa.me/6281211112222?text=Halo%20Igo,%20gw%20tertarik%20buat%20bikin%20website%20nih!"
               target="_blank"
               referrerPolicy="no-referrer"
               className="ml-4 px-4 py-2 bg-slate-900 text-white rounded-xl font-display text-sm font-semibold border-2 border-slate-900 hover:bg-brand-purple hover:text-white hover:shadow-[3px_3px_0px_0px_#0f172a] transition-all flex items-center gap-2 cursor-pointer"
@@ -103,7 +103,7 @@ export default function Navbar() {
               ))}
               
               <a
-                href="https://wa.me/6281382876886?text=Halo%20Igo,%20gw%20tertarik%20buat%20bikin%20website%20nih!"
+                href="https://wa.me/6281211112222?text=Halo%20Igo,%20gw%20tertarik%20buat%20bikin%20website%20nih!"
                 target="_blank"
                 referrerPolicy="no-referrer"
                 onClick={() => setIsOpen(false)}

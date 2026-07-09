@@ -252,7 +252,7 @@ export default function VibeCoding() {
       {/* Trust & Transparency Quote */}
       <div className="max-w-2xl mx-auto text-center mt-20 p-6 rounded-2xl border-2 border-dashed border-slate-300 bg-slate-50/55">
         <p className="font-sans italic text-sm text-slate-500 leading-relaxed font-medium">
-          "Bagi gw, AI adalah asisten drafting super cepat. Proses audit manual, testing keamanan Supabase Row Level Security (RLS), dan penulisan types tetap merupakan tanggung jawab mutlak gw sebagai independent developer."
+          "Banyak developer lari ke AI cuma buat copy-paste mentah tanpa tahu isinya. Tapi bagi gw, AI adalah asisten drafting super cepat. Proses audit manual, testing keamanan Supabase Row Level Security (RLS), dan penulisan types tetap merupakan tanggung jawab mutlak gw sebagai senior developer."
         </p>
         <span className="block font-display text-xs text-brand-purple font-bold mt-3">
           — Muhammad Shibghotul 'Adalah (Igo)

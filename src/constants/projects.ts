@@ -17,8 +17,7 @@ export const PROJECTS_DATA: Project[] = [
     techStack: ['React', 'TypeScript', 'Supabase', 'Tailwind CSS', 'Recharts'],
     role: 'Solo Full-stack Developer',
     category: 'Personal Project',
-    imageUrl: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80',
-    projectUrl: 'http://catetanduitgue.vercel.app/'
+    imageUrl: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80'
   },
   {
     id: 'cctv-investigation',
@@ -54,8 +53,7 @@ export const PROJECTS_DATA: Project[] = [
     techStack: ['React', 'Next.js', 'Node.js', 'Supabase', 'Tailwind CSS', 'PostgreSQL'],
     role: 'Freelance Full-stack Developer',
     category: 'Client Project',
-    imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
-    projectUrl: 'https://globalinspire.id/'
+    imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80'
   },
   {
     id: 'sdit-darunnajah',
@@ -73,8 +71,7 @@ export const PROJECTS_DATA: Project[] = [
     techStack: ['React', 'Vite', 'Supabase', 'Tailwind CSS', 'Framer Motion'],
     role: 'UI/UX Designer & Frontend Developer',
     category: 'Client Project',
-    imageUrl: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80',
-    projectUrl: 'https://sditdarunnajahseluma.vercel.app/'
+    imageUrl: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80'
   },
   {
     id: 'receipt-scanner',
@@ -110,8 +107,7 @@ export const PROJECTS_DATA: Project[] = [
     techStack: ['React', 'Vite', 'Supabase Storage & Database', 'Tailwind CSS'],
     role: 'Solo Developer',
     category: 'Client Project',
-    imageUrl: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80',
-    projectUrl: 'https://www.muthialiving.com/'
+    imageUrl: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80'
   },
   {
     id: 'labbaik',
