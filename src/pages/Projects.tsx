@@ -141,7 +141,7 @@ export default function Projects() {
 
         <div className="shrink-0 w-full md:w-auto">
           <a
-            href="https://wa.me/6281211112222?text=Halo%20Igo,%20gw%20nemu%20portfolio%20lu%20dan%20tertarik%20buat%20bikin%20sistem%20custom%20nih!"
+            href="https://wa.me/6281382876886?text=Halo%20Igo,%20gw%20nemu%20portfolio%20lu%20dan%20tertarik%20buat%20bikin%20sistem%20custom%20nih!"
             target="_blank"
             referrerPolicy="no-referrer"
             className="w-full text-center inline-flex items-center justify-center gap-2 px-6 py-4 bg-slate-900 hover:bg-brand-purple text-white hover:text-white rounded-2xl font-display font-bold text-base border-2 border-slate-900 shadow-[4px_4px_0px_0px_#0f172a] hover:-translate-y-0.5 transition-all cursor-pointer"

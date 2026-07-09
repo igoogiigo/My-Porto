@@ -110,13 +110,13 @@ export default function Contact() {
             </div>
 
             <a
-              href="https://wa.me/6281211112222?text=Halo%20Igo,%20gw%20nemu%20portfolio%20lu%20dan%20tertarik%20buat%20bikin%20web%20app%20/%20sistem%20internal!"
+              href="https://wa.me/6281382876886?text=Halo%20Igo,%20gw%20nemu%20portfolio%20lu%20dan%20tertarik%20buat%20bikin%20web%20app%20/%20sistem%20internal!"
               target="_blank"
               referrerPolicy="no-referrer"
               className="w-full text-center py-4 bg-brand-yellow text-slate-950 rounded-2xl font-display font-bold text-base border-2 border-slate-900 shadow-[4px_4px_0px_0px_#0f172a] hover:bg-white hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_#0f172a] transition-all flex items-center justify-center gap-2 cursor-pointer"
             >
               <MessageSquare className="w-5 h-5 text-slate-950" />
-              <span>Buka Chat WA ("6281211112222")</span>
+              <span>Buka Chat WA ("6281382876886")</span>
             </a>
           </div>
 

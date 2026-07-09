@@ -42,7 +42,7 @@ export default function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://wa.me/6281211112222?text=Halo%20Igo,%20gw%20tertarik%20buat%20bikin%20website%20nih!"
+                href="https://wa.me/6281382876886?text=Halo%20Igo,%20gw%20tertarik%20buat%20bikin%20website%20nih!"
                 target="_blank"
                 referrerPolicy="no-referrer"
                 className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center border-2 border-slate-700 hover:border-brand-orange hover:bg-brand-orange/20 transition-all cursor-pointer"
