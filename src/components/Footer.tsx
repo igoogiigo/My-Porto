@@ -24,7 +24,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-3">
               <a
-                href="https://github.com/shibghotul"
+                href="https://github.com/igoogiigo"
                 target="_blank"
                 referrerPolicy="no-referrer"
                 className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center border-2 border-slate-700 hover:border-brand-purple hover:bg-brand-purple/20 transition-all cursor-pointer"
@@ -33,7 +33,7 @@ export default function Footer() {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com/in/shibghotul"
+                href="https://www.linkedin.com/in/halo-shibghotul/"
                 target="_blank"
                 referrerPolicy="no-referrer"
                 className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center border-2 border-slate-700 hover:border-brand-teal hover:bg-brand-teal/20 transition-all cursor-pointer"
