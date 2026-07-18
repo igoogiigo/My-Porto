@@ -18,7 +18,7 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Solo Full-stack Developer',
     category: 'Personal Project',
     imageUrl: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80',
-    projectUrl: 'https://catetanduitgue.vercel.app/'
+    projectUrl: 'https://fintrack.shibghotul.web.id/'
   },
   {
     id: 'cctv-investigation',
