@@ -17,25 +17,27 @@ export const PROJECTS_DATA: Project[] = [
     techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Vite', 'Lucide Icons'],
     role: 'Frontend Developer & Database Designer',
     category: 'Client Project',
-    imageUrl: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80'
+    imageUrl: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
+    projectUrl: 'https://www.arttrea.com/'
   },
   {
     id: 'jamf-indonesia',
-    title: 'Jamf Indonesia Portal',
-    tagline: 'Platform Solusi Apple Enterprise Management & Security',
-    description: 'Platform katalog produk, modul pengajuan katalog/penawaran, layanan Apple management, dan dashboard manajemen admin Jamf Indonesia.',
-    problem: 'Klien membutuhkan platform edukasi dan penjualan solusi enterprise Apple Management (Jamf Pro & Jamf Protect) yang terintegrasi dengan permintaan katalog dan manajemen admin secara efisien.',
-    solution: 'Membangun web portal komprehensif dengan katalog produk Apple Enterprise, form pengajuan penawaran/katalog interaktif, serta Admin Management Dashboard yang dinamis.',
+    title: 'CV JAMF Indonesia',
+    tagline: 'Web Showcase & E-Catalog Furniture Kayu Jati & Epoxy Resin Ekspor',
+    description: 'Website portal katalog & manufaktur furniture premium dari Jepara (CV Jepara Asia Mas Furniture / JAMF), memamerkan koleksi kayu jati ekspor, mebel epoxy resin, dan dekorasi kayu buatan tangan sejak 2013.',
+    problem: 'CV JAMF memerlukan platform web eksklusif bertaraf internasional untuk menampilkan koleksi furniture kayu jati kualitas ekspor, kerajinan epoxy resin, serta sistem permintaan katalog PDF dan inquiry penawaran dari buyer luar negeri.',
+    solution: 'Membangun platform katalog digital yang estetik dan interaktif dengan efek visual halus, fitur pencarian & penyaringan produk, modul permintaan katalog/quotation, serta dasbor manajemen admin.',
     features: [
-      'Katalog produk & solusi Apple Management Enterprise (MDM, Security, Identity)',
-      'Fitur pengajuan katalog & permintaan penawaran harga (Catalog Request)',
-      'Halaman koleksi produk & integrasi artikel/blog teknologi Apple',
-      'Comprehensive Admin View untuk pengawasan request & manajemen konten'
+      'Katalog produk furniture kayu jati (Teak), mebel Epoxy Resin, & Wood Deco',
+      'Sistem pengajuan katalog PDF & kustomisasi penawaran harga (Catalog & Quotation Request)',
+      'Showcase portofolio pengerjaan kustom & galeri produk ekspor',
+      'Admin Management Dashboard untuk kelola produk, inquiry buyer, dan artikel'
     ],
-    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Gemini AI', 'Lucide Icons'],
+    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Vite', 'Lucide Icons'],
     role: 'Full-stack Developer',
     category: 'Client Project',
-    imageUrl: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80'
+    imageUrl: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80',
+    projectUrl: 'https://jamfindonesia.com/'
   },
   {
     id: 'labbaik',
@@ -53,7 +55,8 @@ export const PROJECTS_DATA: Project[] = [
     techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Adhan JS', 'PWA', 'Google Gemini AI', 'Motion'],
     role: 'Solo Developer',
     category: 'Personal Project',
-    imageUrl: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=800&q=80'
+    imageUrl: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=800&q=80',
+    projectUrl: 'https://labbaik-id.vercel.app/'
   },
   {
     id: 'fintrack',
