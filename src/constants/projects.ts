@@ -4,15 +4,15 @@ export const PROJECTS_DATA: Project[] = [
   {
     id: 'arttrea-interior',
     title: 'Arttrea Interior',
-    tagline: 'Web Portal & Interactive Showcase Furniture & Interior Ekspor Luxury',
-    description: 'Website portal showcase perusahaan manufaktur furniture & interior bespoke ekspor dengan sertifikasi kayu SVLK, katalog produk, proyek mewah resort, serta sistem pengelolaan konten.',
-    problem: 'Arttrea Interior membutuhkan media digital yang mencerminkan kesan kemewahan dan standar ekspor internasional untuk memamerkan proyek resort mewah (Maldives & Ubud), sertifikasi SVLK resmi, serta layanan perkayuan bespoke.',
-    solution: 'Membangun platform web responsif dengan tipografi elegan, galeri visual proyek bernilai tinggi, halaman sertifikasi kayu SVLK resmi, serta dasbor manajemen konten internal.',
+    tagline: 'Web Portal & Portfolio Contract Furniture Hotel & Resort Mewah (Bali & Ekspor)',
+    description: 'Website portal resmi Arttrea Interior — kontraktor interior berbasis di Bali spesialis contract furniture & refurbishment untuk hotel, resort mewah, dan villa (proyek di Maldives, Malaysia, Singapore, & Indonesia) dengan sertifikasi kayu resmi SVLK.',
+    problem: 'Arttrea Interior membutuhkan platform digital elegan bertaraf internasional untuk menampilkan portofolio proyek resort bintang lima (Maldives, Ubud, dll), legalitas sertifikasi kayu SVLK, serta layanan bespoke & contract furniture.',
+    solution: 'Membangun web portal premium dengan tipografi Cormorant Garamond estetik, galeri showcase proyek resort luxury, edukasi sertifikasi kayu SVLK resmi, serta dasbor pengelolaan konten admin.',
     features: [
-      'Showcase galeri proyek resort internasional (Maldives, Ubud, dll)',
-      'Halaman edukasi & verifikasi sertifikasi kayu resmi SVLK (Wood Certification)',
-      'Sistem katalog produk perkayuan bespoke & layanan contract furniture',
-      'Admin Dashboard internal untuk manajemen proyek, klien, dan konten layanan'
+      'Showcase portofolio proyek resort & hotel internasional (Maldives, Malaysia, Singapore, Bali)',
+      'Halaman sertifikasi resmi kelayakan & legalitas kayu SVLK (Wood Certification)',
+      'Katalog layanan Contract Furniture, Custom Bespoke Interior, & Refurbishment',
+      'Admin Dashboard internal untuk manajemen proyek, klien, dan modul konten'
     ],
     techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Vite', 'Lucide Icons'],
     role: 'Frontend Developer & Database Designer',
