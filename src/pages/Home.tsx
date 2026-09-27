@@ -44,11 +44,11 @@ export default function Home() {
 
             <h1 className="font-display font-black text-4xl sm:text-6xl text-slate-900 leading-tight tracking-tight mb-4">
               Halo, gw <span className="text-gradient-purple-orange relative font-extrabold">Igo</span>! <br />
-              IT Support + Web Dev
+              Production Support + Web Dev
             </h1>
 
             <p className="font-display text-lg sm:text-xl text-slate-700 font-semibold mb-6 max-w-2xl">
-              Nama lengkap gw <span className="underline decoration-brand-orange decoration-3 underline-offset-4">Muhammad Shibghotul 'Adalah</span>. IT Support di perusahaan logistik <span className="text-brand-orange font-bold">Sentral Cargo Jakarta</span> sekaligus Freelance Web Developer yang hobi <span className="italic text-brand-purple">"vibe-coding"</span>!
+              Nama lengkap gw <span className="underline decoration-brand-orange decoration-3 underline-offset-4">Muhammad Shibghotul 'Adalah</span>. Production Support Services (Middle Level) under Outsource <span className="text-brand-orange font-bold">PT Verita Informatika (Bank BSN)</span> sekaligus Freelance Web Developer yang hobi <span className="italic text-brand-purple">"vibe-coding"</span>!
             </p>
 
             <p className="font-sans text-slate-600 text-sm sm:text-base mb-8 max-w-xl leading-relaxed">
@@ -101,7 +101,7 @@ export default function Home() {
                     <span className="font-mono text-[10px] text-slate-400 uppercase font-bold block">Current Role</span>
                     <span className="font-display font-extrabold text-slate-800 text-sm flex items-center gap-1.5 mt-0.5">
                       <Server className="w-4 h-4 text-brand-orange" />
-                      IT Support @ Sentral Cargo
+                      Production Support @ Bank BSN
                     </span>
                   </div>
 

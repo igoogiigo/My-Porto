@@ -2,6 +2,60 @@ import { Project, VibeStep } from '../types';
 
 export const PROJECTS_DATA: Project[] = [
   {
+    id: 'arttrea-interior',
+    title: 'Arttrea Interior',
+    tagline: 'Web Portal & Interactive Showcase Furniture & Interior Ekspor Luxury',
+    description: 'Website portal showcase perusahaan manufaktur furniture & interior bespoke ekspor dengan sertifikasi kayu SVLK, katalog produk, proyek mewah resort, serta sistem pengelolaan konten.',
+    problem: 'Arttrea Interior membutuhkan media digital yang mencerminkan kesan kemewahan dan standar ekspor internasional untuk memamerkan proyek resort mewah (Maldives & Ubud), sertifikasi SVLK resmi, serta layanan perkayuan bespoke.',
+    solution: 'Membangun platform web responsif dengan tipografi elegan, galeri visual proyek bernilai tinggi, halaman sertifikasi kayu SVLK resmi, serta dasbor manajemen konten internal.',
+    features: [
+      'Showcase galeri proyek resort internasional (Maldives, Ubud, dll)',
+      'Halaman edukasi & verifikasi sertifikasi kayu resmi SVLK (Wood Certification)',
+      'Sistem katalog produk perkayuan bespoke & layanan contract furniture',
+      'Admin Dashboard internal untuk manajemen proyek, klien, dan konten layanan'
+    ],
+    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Vite', 'Lucide Icons'],
+    role: 'Frontend Developer & Database Designer',
+    category: 'Client Project',
+    imageUrl: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'jamf-indonesia',
+    title: 'Jamf Indonesia Portal',
+    tagline: 'Platform Solusi Apple Enterprise Management & Security',
+    description: 'Platform katalog produk, modul pengajuan katalog/penawaran, layanan Apple management, dan dashboard manajemen admin Jamf Indonesia.',
+    problem: 'Klien membutuhkan platform edukasi dan penjualan solusi enterprise Apple Management (Jamf Pro & Jamf Protect) yang terintegrasi dengan permintaan katalog dan manajemen admin secara efisien.',
+    solution: 'Membangun web portal komprehensif dengan katalog produk Apple Enterprise, form pengajuan penawaran/katalog interaktif, serta Admin Management Dashboard yang dinamis.',
+    features: [
+      'Katalog produk & solusi Apple Management Enterprise (MDM, Security, Identity)',
+      'Fitur pengajuan katalog & permintaan penawaran harga (Catalog Request)',
+      'Halaman koleksi produk & integrasi artikel/blog teknologi Apple',
+      'Comprehensive Admin View untuk pengawasan request & manajemen konten'
+    ],
+    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Gemini AI', 'Lucide Icons'],
+    role: 'Full-stack Developer',
+    category: 'Client Project',
+    imageUrl: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'labbaik',
+    title: 'Labbaik - Islamic Assistant PWA',
+    tagline: 'Aplikasi PWA Pendamping Ibadah & Kompas Qibla Berbasis AI',
+    description: 'Aplikasi Progressive Web App (PWA) pendamping ibadah harian dengan kalkulasi waktu sholat akurat, kompas kiblat interaktif, serta asisten AI.',
+    problem: 'Pengguna menginginkan aplikasi pengingat waktu ibadah yang ringan tanpa iklan mengganggu, bisa diakses offline via PWA, serta dilengkapi kompas kiblat yang presisi.',
+    solution: 'Membangun aplikasi PWA modern mengintegrasikan library Adhan JS untuk jadwal sholat real-time lokasi, fitur Kompas Kiblat sensoris, serta Asisten AI Gemini.',
+    features: [
+      'Kalkulasi jadwal waktu sholat otomatis berbasis lokasi real-time (Adhan JS)',
+      'Kompas Kiblat interaktif berbasis sensor perangkat',
+      'Integrasi Asisten AI (Google Gemini) untuk tanya-jawab seputar ibadah',
+      'Dukungan Progressive Web App (PWA) agar bisa di-install langsung di HP'
+    ],
+    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Adhan JS', 'PWA', 'Google Gemini AI', 'Motion'],
+    role: 'Solo Developer',
+    category: 'Personal Project',
+    imageUrl: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=800&q=80'
+  },
+  {
     id: 'fintrack',
     title: 'FinTrack',
     tagline: 'Dashboard Keuangan Personal Modular & Mandiri',

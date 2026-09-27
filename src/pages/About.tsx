@@ -6,7 +6,14 @@ import { motion } from 'motion/react';
 export default function About() {
   const experiences = [
     {
-      period: '2025 - Sekarang',
+      period: 'Agt 2026 - Sekarang',
+      role: 'Production Support Services (Middle Level)',
+      company: 'PT Verita Informatika (Penempatan: Bank BSN)',
+      description: 'Bertanggung jawab atas pengelolaan & penanganan insiden sistem produksi (Production Support) level Middle di Bank BSN, menjaga reliabilitas aplikasi perbankan, analisa log & insiden teknis real-time, penanganan tiket eskalasi, serta koordinasi solusi sistem.',
+      color: 'border-brand-teal text-brand-teal bg-brand-teal/5'
+    },
+    {
+      period: '2025 - Jul 2026',
       role: 'IT Support & Systems Maintenance',
       company: 'Sentral Cargo (Jakarta)',
       description: 'Menjaga keandalan infrastruktur IT, jaringan logistik cabang utama, integrasi sistem CCTV, CCTV Investigation Request, serta merancang aplikasi pelaporan BBM armada internal berbasis Next.js & Supabase untuk mengeliminasi fraud manual.',
@@ -62,11 +69,11 @@ export default function About() {
               Muhammad Shibghotul 'Adalah
             </h2>
             <p className="text-center font-mono text-xs font-bold text-brand-orange mb-6">
-              IT Support @ Sentral Cargo & Freelance Dev
+              Production Support @ Bank BSN (Verita) & Freelance Dev
             </p>
 
             <p className="font-sans text-slate-600 text-sm leading-relaxed mb-6 text-center lg:text-left font-medium">
-              Lulusan <strong>D3 Sistem Informasi Telkom University</strong> yang percaya kalau kode terbaik dihasilkan lewat "vibe-coding" yang menyenangkan tapi diaudit dengan standar tinggi. Gw suka ngulik sistem, memecahkan error, dan bikin form otomatis yang ngebantu admin kantor biar nggak lembur lagi!
+              Lulusan <strong>D3 Sistem Informasi Telkom University</strong> yang percaya kalau kode terbaik dihasilkan lewat "vibe-coding" yang menyenangkan tapi diaudit dengan standar tinggi. Gw suka ngulik sistem, memecahkan error insiden produksi, dan bikin aplikasi web modern!
             </p>
 
             <div className="border-t-2 border-slate-100 pt-6 space-y-4">
@@ -86,7 +93,7 @@ export default function About() {
                 </div>
                 <div>
                   <span className="block font-display font-extrabold text-xs text-slate-400">Pengalaman</span>
-                  <span className="font-sans text-xs font-bold text-slate-800">3+ Tahun Application Support Telkom, 2+ Tahun Logistik & Freelance</span>
+                  <span className="font-sans text-xs font-bold text-slate-800">App Support Telkom, IT Support Sentral Cargo, Prod Support Bank BSN</span>
                 </div>
               </div>
 
@@ -127,13 +134,16 @@ export default function About() {
                 Karir gw dimulai sebagai mahasiswa <strong>D3 Sistem Informasi di Telkom University</strong>. Di sanalah dasar analisis sistem, database relasional, dan cara berpikir logis mulai terbentuk.
               </p>
               <p>
-                Setelah lulus, gw langsung masuk ke industri telekomunikasi terbesar di Indonesia. Selama lebih dari <strong>3 tahun sebagai Application Support L1/L2 di Telkom Indonesia</strong>, gw digembleng untuk memecahkan insiden aplikasi skala nasional, membaca logs server ratusan megabyte, dan menyelesaikan error database secara real-time. Ini bikin insting "debugging" gw sangat tajam.
+                Setelah lulus, gw masuk ke industri telekomunikasi selama lebih dari <strong>3 tahun sebagai Application Support L1/L2 di Telkom Indonesia</strong>. Gw digembleng untuk memecahkan insiden aplikasi skala nasional, membaca logs server ratusan megabyte, dan menyelesaikan error database secara real-time.
               </p>
               <p>
-                Sekarang, gw bertugas sebagai <strong>IT Support di Sentral Cargo Jakarta</strong>. Logistik adalah industri super dinamis di mana setiap detik kelambatan sistem bisa menghambat ribuan paket. Selain menjaga kestabilan sistem LAN, printer thermal, dan kamera CCTV, gw hobi menciptakan sistem mandiri terintegrasi database Supabase untuk merapikan alur rekrutmen karyawan (ATS), pelaporan BBM sopir, hingga pengecekan rekaman investigasi CCTV.
+                Selanjutnya, gw bertugas sebagai <strong>IT Support di Sentral Cargo Jakarta</strong> (hingga 31 Juli 2026). Gw menjaga infrastruktur IT, jaringan logistik cabang utama, integrasi kamera CCTV, hingga merancang sistem pelaporan BBM armada internal berbasis Next.js & Supabase.
               </p>
               <p>
-                Di waktu malam, gw menyalurkan hasrat coding gw sebagai <strong>Freelance Web Developer</strong> untuk klien-klien bisnis yang membutuhkan landing page estetik berkinerja tinggi, dasbor admin terintegrasi, atau web internal kustom.
+                Terhitung mulai <strong>3 Agustus 2026</strong>, gw melangkah ke tantangan baru sebagai <strong>Production Support Services (Middle Level) under Outsource PT Verita Informatika dengan penempatan di Bank BSN</strong>. Di sini, fokus gw adalah menjaga reliabilitas dan memantau insiden sistem produksi aplikasi perbankan secara real-time.
+              </p>
+              <p>
+                Di waktu malam, gw menyalurkan hasrat coding gw sebagai <strong>Freelance Web Developer</strong> untuk klien-klien bisnis yang membutuhkan landing page estetik berkinerja tinggi, dasbor admin terintegrasi, atau web aplikasi kustom.
               </p>
             </div>
           </div>
