@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Award, Briefcase, GraduationCap, Heart, Cpu, Globe, Server, CheckSquare, MessageSquare } from 'lucide-react';
+import { Award, Briefcase, GraduationCap, Heart, Cpu, Globe, Server, CheckSquare, MessageSquare, Mail } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export default function About() {
@@ -104,6 +104,21 @@ export default function About() {
                 <div>
                   <span className="block font-display font-extrabold text-xs text-slate-400">Karakter Kerja</span>
                   <span className="font-sans text-xs font-bold text-slate-800">Santai tapi niat, solusi operasional riil</span>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className="w-9 h-9 rounded-lg bg-amber-50 border border-amber-200 flex items-center justify-center text-brand-orange">
+                  <Mail className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="block font-display font-extrabold text-xs text-slate-400">Email Resmi</span>
+                  <a
+                    href="mailto:halo@shibghotul.web.id"
+                    className="font-sans text-xs font-bold text-slate-800 hover:text-brand-purple transition-colors"
+                  >
+                    halo@shibghotul.web.id
+                  </a>
                 </div>
               </div>
             </div>

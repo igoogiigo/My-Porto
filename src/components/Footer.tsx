@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Terminal, Github, Linkedin, MessageSquare, Flame } from 'lucide-react';
+import { Terminal, Github, Linkedin, MessageSquare, Flame, Mail } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -19,10 +19,18 @@ export default function Footer() {
             </Link>
             
             <p className="text-slate-400 text-sm max-w-md leading-relaxed mb-6 font-medium">
-              Dual-role profesional: Memastikan infrastruktur IT Sentral Cargo Jakarta berjalan mulus di siang hari, dan merakit web app kencang anti-lelet berbasis Supabase di malam hari.
+              Dual-role profesional: Menjaga stabilitas aplikasi sistem perbankan Bank BSN di siang hari, dan merakit web app kencang anti-lelet berbasis Supabase di malam hari.
             </p>
 
             <div className="flex items-center gap-3">
+              <a
+                href="mailto:halo@shibghotul.web.id"
+                className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center border-2 border-slate-700 hover:border-brand-yellow hover:bg-brand-yellow/20 transition-all cursor-pointer"
+                aria-label="Email Resmi Shibghotul"
+                title="halo@shibghotul.web.id"
+              >
+                <Mail className="w-5 h-5 text-brand-yellow" />
+              </a>
               <a
                 href="https://github.com/igoogiigo"
                 target="_blank"

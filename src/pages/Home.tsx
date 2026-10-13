@@ -4,7 +4,7 @@ import { PROJECTS_DATA } from '../constants/projects';
 import { Project } from '../types';
 import ProjectCard from '../components/ProjectCard';
 import ProjectDetailModal from '../components/ProjectDetailModal';
-import { ArrowRight, Code2, Sparkles, MessageSquare, Terminal, Server, Shield, CheckCircle } from 'lucide-react';
+import { ArrowRight, Code2, Sparkles, MessageSquare, Terminal, Server, Shield, CheckCircle, Mail } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 export default function Home() {
@@ -125,7 +125,7 @@ export default function Home() {
                 {/* Mini terminal footer */}
                 <div className="mt-4 bg-slate-950 p-3.5 rounded-xl border border-slate-800 font-mono text-[11px] text-emerald-400">
                   <span className="text-slate-500">~/igo-dev$</span> npm run build <br />
-                  <span className="text-brand-teal">✓</span> 8 core projects generated. <br />
+                  <span className="text-brand-teal">✓</span> 11 core projects generated. <br />
                   <span className="text-brand-orange">⚡</span> Speed level: Vibe-Coding!
                 </div>
               </div>
@@ -268,9 +268,10 @@ export default function Home() {
           </a>
           <Link
             to="/contact"
-            className="w-full sm:w-auto px-8 py-4 bg-white text-slate-800 rounded-2xl font-display font-bold text-base border-2 border-slate-900 hover:bg-slate-50 shadow-[4px_4px_0px_0px_#0f172a] hover:-translate-y-0.5 transition-all"
+            className="w-full sm:w-auto px-8 py-4 bg-white text-slate-800 rounded-2xl font-display font-bold text-base border-2 border-slate-900 hover:bg-slate-50 shadow-[4px_4px_0px_0px_#0f172a] hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2"
           >
-            Kirim Email Kontak Form
+            <Mail className="w-5 h-5 text-brand-orange" />
+            <span>Kirim Pesan / Email</span>
           </Link>
         </div>
       </section>

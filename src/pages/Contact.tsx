@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ContactMessage } from '../types';
-import { Send, MessageSquare, Terminal, Table, CheckSquare, Trash2, Code2, AlertCircle, RefreshCw } from 'lucide-react';
+import { Send, MessageSquare, Terminal, Table, CheckSquare, Trash2, Code2, AlertCircle, RefreshCw, Mail } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 export default function Contact() {
@@ -89,11 +89,11 @@ export default function Contact() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
-        {/* Left Column: Big WhatsApp CTA & Info */}
-        <div className="lg:col-span-5 space-y-8">
+        {/* Left Column: Big WhatsApp CTA & Official Email */}
+        <div className="lg:col-span-5 space-y-6">
           
           {/* MASSIVE WHATSAPP CTA BOX */}
-          <div className="bg-brand-purple text-white border-3 border-slate-900 rounded-3xl p-8 shadow-[8px_8px_0px_0px_#0f172a] relative overflow-hidden flex flex-col justify-between h-full min-h-[350px] group">
+          <div className="bg-brand-purple text-white border-3 border-slate-900 rounded-3xl p-8 shadow-[8px_8px_0px_0px_#0f172a] relative overflow-hidden flex flex-col justify-between group">
             {/* Background Blob */}
             <div className="absolute -bottom-10 -right-10 w-44 h-44 bg-brand-orange rounded-full filter blur-2xl opacity-40 group-hover:scale-110 transition-transform"></div>
 
@@ -117,6 +117,32 @@ export default function Contact() {
             >
               <MessageSquare className="w-5 h-5 text-slate-950" />
               <span>Buka Chat WA ("6281382876886")</span>
+            </a>
+          </div>
+
+          {/* OFFICIAL EMAIL CARD */}
+          <div className="bg-white border-3 border-slate-900 rounded-3xl p-6 sm:p-8 shadow-[8px_8px_0px_0px_#0f172a] flex flex-col justify-between">
+            <div>
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 rounded-xl bg-brand-orange/15 border-2 border-slate-900 flex items-center justify-center text-brand-orange shadow-[2px_2px_0px_0px_#0f172a]">
+                  <Mail className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="font-mono text-[10px] text-brand-orange font-bold uppercase tracking-wider block">Official Email</span>
+                  <h3 className="font-display font-black text-lg text-slate-900">Email Resmi</h3>
+                </div>
+              </div>
+              <p className="font-sans text-slate-600 text-sm leading-relaxed mb-6 font-medium">
+                Punya penawaran formal, NDA, brief project, atau inquiry corporate? Lu bisa kontak langsung ke email resmi domain gw:
+              </p>
+            </div>
+
+            <a
+              href="mailto:halo@shibghotul.web.id"
+              className="w-full text-center py-3.5 bg-slate-900 text-white rounded-2xl font-display font-bold text-sm border-2 border-slate-900 shadow-[4px_4px_0px_0px_#0f172a] hover:bg-brand-orange hover:text-white hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_#0f172a] transition-all flex items-center justify-center gap-2 cursor-pointer"
+            >
+              <Mail className="w-4 h-4 text-brand-yellow" />
+              <span>halo@shibghotul.web.id</span>
             </a>
           </div>
 
