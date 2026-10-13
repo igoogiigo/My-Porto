@@ -41,19 +41,20 @@ export const PROJECTS_DATA: Project[] = [
   },
   {
     id: 'labbaik',
-    title: 'Labbaik - Islamic Assistant PWA',
-    tagline: 'Aplikasi PWA Pendamping Ibadah & Kompas Qibla Berbasis AI',
-    description: 'Aplikasi Progressive Web App (PWA) pendamping ibadah harian dengan kalkulasi waktu sholat akurat, kompas kiblat interaktif, serta asisten AI.',
-    problem: 'Pengguna menginginkan aplikasi pengingat waktu ibadah yang ringan tanpa iklan mengganggu, bisa diakses offline via PWA, serta dilengkapi kompas kiblat yang presisi.',
-    solution: 'Membangun aplikasi PWA modern mengintegrasikan library Adhan JS untuk jadwal sholat real-time lokasi, fitur Kompas Kiblat sensoris, serta Asisten AI Gemini.',
+    title: 'Labbaik - Islamic & Umrah Companion PWA',
+    tagline: 'Aplikasi PWA Pendamping Ibadah Harian, Panduan Umrah & Kompas Kiblat Berbasis AI',
+    description: 'Aplikasi Progressive Web App (PWA) all-in-one pendamping ibadah harian & perjalanan spiritual umrah, dilengkapi panduan manasik terstruktur, jadwal sholat akurat berbasis GPS, kompas kiblat sensoris, quran & amalan tracker, serta asisten AI interaktif.',
+    problem: 'Jamaah dan umat muslim membutuhkan aplikasi pendamping ibadah & panduan manasik umrah yang ringan tanpa iklan, bisa diakses offline di tanah suci via PWA, serta memiliki fitur kompas kiblat dan asisten tanya-jawab ibadah yang praktis.',
+    solution: 'Membangun aplikasi PWA modern berbasis fase ibadah (Pra, Saat, Pasca Umrah) dengan countdown keberangkatan, jadwal sholat Adhan JS real-time, kompas kiblat sensoris, tasbih & quran tracker, checklist amalan harian, serta asisten AI Google Gemini.',
     features: [
-      'Kalkulasi jadwal waktu sholat otomatis berbasis lokasi real-time (Adhan JS)',
-      'Kompas Kiblat interaktif berbasis sensor perangkat',
-      'Integrasi Asisten AI (Google Gemini) untuk tanya-jawab seputar ibadah',
-      'Dukungan Progressive Web App (PWA) agar bisa di-install langsung di HP'
+      'Jadwal waktu sholat otomatis berbasis GPS real-time (Adhan JS) & kompas kiblat sensoris',
+      'Integrasi Asisten AI (Google Gemini) untuk konsultasi dan tanya-jawab seputar ibadah',
+      'Panduan terstruktur manasik umrah (Pra, Saat, Pasca Umrah) & countdown keberangkatan',
+      'Tasbih digital, checklist amalan harian (streak tracking), dan Quran Tracker 3 metode',
+      'Dukungan penuh Progressive Web App (PWA) agar ringan dan dapat di-install langsung di HP'
     ],
-    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Adhan JS', 'PWA', 'Google Gemini AI', 'Motion'],
-    role: 'Solo Developer',
+    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Adhan JS', 'PWA', 'Google Gemini AI', 'Supabase', 'Motion'],
+    role: 'Solo Full-stack Developer',
     category: 'Personal Project',
     imageUrl: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=800&q=80',
     projectUrl: 'https://labbaik-id.vercel.app/'
@@ -168,26 +169,6 @@ export const PROJECTS_DATA: Project[] = [
     category: 'Client Project',
     imageUrl: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80',
     projectUrl: 'https://www.muthialiving.com/'
-  },
-  {
-    id: 'labbaik',
-    title: 'Labbaik',
-    tagline: 'Pendamping Digital Perjalanan Spiritual Umroh',
-    description: 'Aplikasi pendamping ibadah umroh yang menemani jamaah dari fase persiapan (Pra Umroh), pelaksanaan manasik (Saat Umroh), hingga menjaga istiqamah sepulangnya (Pasca Umroh).',
-    problem: 'Jamaah calon umroh sering kesulitan mengakses panduan manasik, bacaan doa, dan tracker ibadah harian dalam satu tempat yang praktis, apalagi saat sedang di perjalanan atau di tanah suci dengan koneksi terbatas.',
-    solution: 'Membangun aplikasi berbasis fase perjalanan (Pra, Saat, Pasca Umroh) dengan countdown keberangkatan, jadwal sholat berbasis GPS, tasbih digital, checklist ibadah harian, hingga pusat belajar (Asmaul Husna, Hadits Arbain, Quran Tracker).',
-    features: [
-      'Dashboard countdown keberangkatan & jadwal sholat presisi berbasis lokasi (GPS)',
-      'Tasbih digital dengan target hitungan dan mode ketuk di mana saja',
-      'Checklist amalan harian (wajib & sunnah) dengan progress tracking streak',
-      'Quran Tracker dengan 3 metode: khatam by tanggal, target harian, atau free tracking',
-      'Pusat belajar berisi Asmaul Husna, Hadits Arbain, dan koleksi doa'
-    ],
-    techStack: ['React', 'TypeScript', 'Supabase', 'Tailwind CSS'],
-    role: 'Solo Full-stack Developer',
-    category: 'Personal Project',
-    imageUrl: 'https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=800&q=80',
-    projectUrl: 'https://labbaik-id.vercel.app/'
   },
   {
     id: 'itam-sentralcargo',

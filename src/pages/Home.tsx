@@ -125,7 +125,7 @@ export default function Home() {
                 {/* Mini terminal footer */}
                 <div className="mt-4 bg-slate-950 p-3.5 rounded-xl border border-slate-800 font-mono text-[11px] text-emerald-400">
                   <span className="text-slate-500">~/igo-dev$</span> npm run build <br />
-                  <span className="text-brand-teal">✓</span> 11 core projects generated. <br />
+                  <span className="text-brand-teal">✓</span> 12 core projects generated. <br />
                   <span className="text-brand-orange">⚡</span> Speed level: Vibe-Coding!
                 </div>
               </div>
