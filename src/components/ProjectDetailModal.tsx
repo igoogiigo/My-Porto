@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Project } from '../types';
+import { Project, getProjectDeployment } from '../types';
 import { X, Code, CheckCircle, ShieldCheck, AlertCircle, Sparkles, Send, MessageSquare, ExternalLink } from 'lucide-react';
 import { motion } from 'motion/react';
 
@@ -22,6 +22,8 @@ export default function ProjectDetailModal({ project, onClose }: ProjectDetailMo
   }, [project]);
 
   if (!project) return null;
+
+  const deployment = getProjectDeployment(project);
 
   // Pre-filled WA text based on project interest
   const waUrl = `https://wa.me/6281382876886?text=Halo%20Igo,%20gw%20tertarik%20sama%20studi%20kasus%20project%20*${encodeURIComponent(project.title)}*%20di%20portfolio%20lu.%20Bisa%20jelasin%20lebih%20lanjut?`;
@@ -67,9 +69,30 @@ export default function ProjectDetailModal({ project, onClose }: ProjectDetailMo
           {/* Hero Header */}
           <div className="grid grid-cols-1 md:grid-cols-5 gap-6 sm:gap-8 items-center mb-8">
             <div className="md:col-span-3">
-              <span className="inline-block px-3 py-1 text-xs font-bold rounded-lg bg-brand-purple/10 text-brand-purple border border-brand-purple/20 mb-3">
-                {project.category}
-              </span>
+              <div className="flex flex-wrap items-center gap-2 mb-3">
+                <span className="inline-block px-3 py-1 text-xs font-bold rounded-lg bg-brand-purple/10 text-brand-purple border border-brand-purple/20">
+                  {project.category}
+                </span>
+
+                {deployment.type === 'production' && (
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-display font-black rounded-lg border-2 border-slate-900 bg-emerald-400 text-slate-950 shadow-[2px_2px_0px_0px_#0f172a]">
+                    <span className="w-2 h-2 rounded-full bg-emerald-900 animate-pulse"></span>
+                    Live Production (.com)
+                  </span>
+                )}
+                {deployment.type === 'demo' && (
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-display font-bold rounded-lg border-2 border-slate-900 bg-amber-200 text-slate-900 shadow-[2px_2px_0px_0px_#0f172a]">
+                    <span className="w-1.5 h-1.5 rounded-full bg-amber-700"></span>
+                    Demo Showcase (vercel.app)
+                  </span>
+                )}
+                {deployment.type === 'internal' && (
+                  <span className="inline-flex items-center gap-1 px-3 py-1 text-xs font-display font-bold rounded-lg border-2 border-slate-900 bg-slate-100 text-slate-700 shadow-[2px_2px_0px_0px_#0f172a]">
+                    Internal Corporate System
+                  </span>
+                )}
+              </div>
+
               <h2 className="font-display font-black text-2xl sm:text-4xl text-slate-900 mb-2 leading-tight">
                 {project.title}
               </h2>
@@ -77,7 +100,7 @@ export default function ProjectDetailModal({ project, onClose }: ProjectDetailMo
                 {project.tagline}
               </p>
               
-              <div className="flex flex-wrap gap-4 text-xs font-mono font-bold text-slate-500">
+              <div className="flex flex-wrap gap-3 text-xs font-mono font-bold text-slate-500">
                 <div className="flex items-center gap-1.5 bg-slate-50 p-2 rounded-lg border border-slate-200">
                   <Code className="w-4 h-4 text-brand-purple" />
                   <span>Role: {project.role}</span>
@@ -87,10 +110,18 @@ export default function ProjectDetailModal({ project, onClose }: ProjectDetailMo
                     href={project.projectUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 bg-brand-purple/10 hover:bg-brand-purple hover:text-white p-2 rounded-lg border border-brand-purple/20 transition-colors text-brand-purple"
+                    className={`flex items-center gap-2 p-2 px-3 rounded-xl border-2 border-slate-900 shadow-[2px_2px_0px_0px_#0f172a] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[1px_1px_0px_0px_#0f172a] transition-all font-display font-bold text-xs ${
+                      deployment.type === 'production'
+                        ? 'bg-emerald-400 hover:bg-emerald-300 text-slate-950'
+                        : 'bg-brand-yellow hover:bg-amber-300 text-slate-950'
+                    }`}
                   >
                     <ExternalLink className="w-4 h-4" />
-                    <span>Live Demo</span>
+                    <span>
+                      {deployment.type === 'production'
+                        ? 'Buka Website Asli (.com)'
+                        : 'Buka Live Demo (vercel.app)'}
+                    </span>
                   </a>
                 )}
               </div>

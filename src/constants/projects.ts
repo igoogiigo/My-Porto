@@ -18,7 +18,8 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Frontend Developer & Database Designer',
     category: 'Client Project',
     imageUrl: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
-    projectUrl: 'https://www.arttrea.com/'
+    projectUrl: 'https://www.arttrea.com/',
+    isProduction: true
   },
   {
     id: 'jamf-indonesia',
@@ -37,7 +38,8 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Full-stack Developer',
     category: 'Client Project',
     imageUrl: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80',
-    projectUrl: 'https://jamfindonesia.com/'
+    projectUrl: 'https://jamfindonesia.com/',
+    isProduction: true
   },
   {
     id: 'labbaik',
@@ -57,7 +59,8 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Solo Full-stack Developer',
     category: 'Personal Project',
     imageUrl: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=800&q=80',
-    projectUrl: 'https://labbaik-id.vercel.app/'
+    projectUrl: 'https://labbaik-id.vercel.app/',
+    isProduction: false
   },
   {
     id: 'fintrack',
@@ -76,7 +79,8 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Solo Full-stack Developer',
     category: 'Personal Project',
     imageUrl: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80',
-    projectUrl: 'https://fintrack.shibghotul.web.id/'
+    projectUrl: 'https://fintrack.shibghotul.web.id/',
+    isProduction: true
   },
   {
     id: 'cctv-investigation',
@@ -113,7 +117,8 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Freelance Full-stack Developer',
     category: 'Client Project',
     imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
-    projectUrl: 'https://globalinspire.id/'
+    projectUrl: 'https://globalinspire.id/',
+    isProduction: true
   },
   {
     id: 'sdit-darunnajah',
@@ -132,7 +137,8 @@ export const PROJECTS_DATA: Project[] = [
     role: 'UI/UX Designer & Frontend Developer',
     category: 'Client Project',
     imageUrl: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80',
-    projectUrl: 'https://sditdarunnajahseluma.vercel.app/'
+    projectUrl: 'https://sditdarunnajahseluma.vercel.app/',
+    isProduction: false
   },
   {
     id: 'receipt-scanner',
@@ -168,7 +174,8 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Solo Developer',
     category: 'Client Project',
     imageUrl: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80',
-    projectUrl: 'https://www.muthialiving.com/'
+    projectUrl: 'https://www.muthialiving.com/',
+    isProduction: true
   },
   {
     id: 'itam-sentralcargo',
@@ -186,7 +193,8 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Developer',
     category: 'Internal Perusahaan',
     imageUrl: 'https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=800&q=80',
-    projectUrl: 'https://itam-sentralcargo.vercel.app/'
+    projectUrl: 'https://itam-sentralcargo.vercel.app/',
+    isProduction: false
   },
   {
     id: 'freelance-pro',
@@ -204,7 +212,8 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Solo Developer',
     category: 'Personal Project',
     imageUrl: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80',
-    projectUrl: 'https://freelance-pro-gamma.vercel.app/'
+    projectUrl: 'https://freelance-pro-gamma.vercel.app/',
+    isProduction: false
   },
   {
     id: 'inteli-gen',
@@ -223,7 +232,8 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Solo Developer',
     category: 'Client Project',
     imageUrl: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80',
-    projectUrl: 'https://inteli-gen.vercel.app/'
+    projectUrl: 'https://inteli-gen.vercel.app/',
+    isProduction: false
   }
 ];
 

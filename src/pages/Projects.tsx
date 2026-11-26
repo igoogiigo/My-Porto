@@ -1,12 +1,12 @@
 import React, { useState, useMemo } from 'react';
 import { PROJECTS_DATA } from '../constants/projects';
-import { Project } from '../types';
+import { Project, getProjectDeployment } from '../types';
 import ProjectCard from '../components/ProjectCard';
 import ProjectDetailModal from '../components/ProjectDetailModal';
-import { Search, SlidersHorizontal, Layers, Sparkles, HelpCircle, Code2 } from 'lucide-react';
+import { Search, SlidersHorizontal, Layers, Sparkles, HelpCircle, Code2, ShieldCheck, Globe } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-type FilterType = 'All' | 'Client Project' | 'Internal Perusahaan' | 'Personal Project';
+type FilterType = 'All' | 'Production' | 'Demo' | 'Client Project' | 'Internal Perusahaan' | 'Personal Project';
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState<FilterType>('All');
@@ -16,6 +16,8 @@ export default function Projects() {
   // Filter Categories list
   const filterCategories: { label: string; value: FilterType }[] = [
     { label: 'Semua Project 🗂️', value: 'All' },
+    { label: 'Live .com (Projek Asli) 🟢', value: 'Production' },
+    { label: 'Demo vercel.app ⚡', value: 'Demo' },
     { label: 'Client Project 🤝', value: 'Client Project' },
     { label: 'Internal Perusahaan 🏢', value: 'Internal Perusahaan' },
     { label: 'Personal Project 🚀', value: 'Personal Project' },
@@ -24,7 +26,15 @@ export default function Projects() {
   // Filtering & Search Logic combined
   const filteredProjects = useMemo(() => {
     return PROJECTS_DATA.filter((project) => {
-      const matchesCategory = activeFilter === 'All' || project.category === activeFilter;
+      let matchesCategory = true;
+      if (activeFilter === 'Production') {
+        matchesCategory = getProjectDeployment(project).type === 'production';
+      } else if (activeFilter === 'Demo') {
+        matchesCategory = getProjectDeployment(project).type === 'demo';
+      } else if (activeFilter !== 'All') {
+        matchesCategory = project.category === activeFilter;
+      }
+
       const matchesSearch =
         project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         project.tagline.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -88,6 +98,29 @@ export default function Projects() {
               {cat.label}
             </button>
           ))}
+        </div>
+      </div>
+
+      {/* Deployment Status Legend */}
+      <div className="flex flex-wrap items-center justify-between gap-3 p-4 bg-white border-2 border-slate-900 rounded-2xl shadow-[4px_4px_0px_0px_#0f172a] mb-8">
+        <div className="flex items-center gap-2">
+          <ShieldCheck className="w-5 h-5 text-brand-purple shrink-0" />
+          <span className="font-display font-extrabold text-sm text-slate-900">
+            Status Deployment Sistem:
+          </span>
+        </div>
+        <div className="flex flex-wrap items-center gap-2 text-xs">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border-2 border-slate-900 bg-emerald-400 text-slate-950 font-display font-black shadow-[2px_2px_0px_0px_#0f172a]">
+            <span className="w-2 h-2 rounded-full bg-emerald-900 animate-pulse"></span>
+            Live .com = Project Asli Klien (Shipped to Production)
+          </span>
+          <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border-2 border-slate-900 bg-amber-200 text-slate-900 font-display font-bold shadow-[2px_2px_0px_0px_#0f172a]">
+            <span className="w-1.5 h-1.5 rounded-full bg-amber-700"></span>
+            vercel.app = Interactive Demo / Showcase Prototype
+          </span>
+          <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border-2 border-slate-900 bg-slate-100 text-slate-700 font-display font-bold shadow-[2px_2px_0px_0px_#0f172a]">
+            Internal Corp = Sistem Internal Logistik
+          </span>
         </div>
       </div>
 

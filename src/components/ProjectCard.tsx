@@ -1,6 +1,6 @@
 import React from 'react';
-import { Project } from '../types';
-import { ExternalLink, ArrowUpRight, Code, ShieldCheck } from 'lucide-react';
+import { Project, getProjectDeployment } from '../types';
+import { ExternalLink, ArrowUpRight, Code, ShieldCheck, Globe, Sparkles } from 'lucide-react';
 
 interface ProjectCardProps {
   project: Project;
@@ -28,6 +28,7 @@ export default function ProjectCard({ project, onViewDetail }: ProjectCardProps)
   };
 
   const style = categoryStyles[project.category] || categoryStyles['Personal Project'];
+  const deployment = getProjectDeployment(project);
 
   return (
     <div className="bg-white border-2 border-slate-900 rounded-2xl overflow-hidden flex flex-col h-full playful-shadow transition-all duration-300 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#0f172a]">
@@ -40,11 +41,32 @@ export default function ProjectCard({ project, onViewDetail }: ProjectCardProps)
           loading="lazy"
         />
         
-        {/* Floating Category Badge */}
+        {/* Floating Badges */}
         <div className="absolute top-3 left-3">
-          <span className={`px-3 py-1 text-xs font-display font-bold rounded-lg border-2 border-slate-900 bg-white text-slate-900 shadow-[2px_2px_0px_0px_#0f172a]`}>
+          <span className="px-3 py-1 text-xs font-display font-bold rounded-lg border-2 border-slate-900 bg-white text-slate-900 shadow-[2px_2px_0px_0px_#0f172a]">
             {style.label}
           </span>
+        </div>
+
+        {/* Floating Deployment Badge (Top Right) */}
+        <div className="absolute top-3 right-3">
+          {deployment.type === 'production' && (
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-display font-black rounded-lg border-2 border-slate-900 bg-emerald-400 text-slate-950 shadow-[2px_2px_0px_0px_#0f172a]">
+              <span className="w-2 h-2 rounded-full bg-emerald-900 animate-pulse"></span>
+              Live .com (Projek Asli)
+            </span>
+          )}
+          {deployment.type === 'demo' && (
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-display font-bold rounded-lg border-2 border-slate-900 bg-amber-200 text-slate-900 shadow-[2px_2px_0px_0px_#0f172a]">
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-700"></span>
+              Demo vercel.app
+            </span>
+          )}
+          {deployment.type === 'internal' && (
+            <span className="inline-flex items-center gap-1 px-2.5 py-1 text-[11px] font-display font-bold rounded-lg border-2 border-slate-900 bg-slate-100 text-slate-700 shadow-[2px_2px_0px_0px_#0f172a]">
+              Internal Corp
+            </span>
+          )}
         </div>
 
         {/* Overlay Hover Effect */}
@@ -100,13 +122,40 @@ export default function ProjectCard({ project, onViewDetail }: ProjectCardProps)
             )}
           </div>
 
-          <button
-            onClick={() => onViewDetail(project)}
-            className="w-full py-2.5 bg-slate-50 hover:bg-brand-yellow/35 text-slate-800 hover:text-slate-950 rounded-xl font-display text-sm font-bold border-2 border-slate-900 hover:shadow-[3px_3px_0px_0px_#0f172a] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 cursor-pointer"
-          >
-            <span>Detail Case Study</span>
-            <ArrowUpRight className="w-4 h-4" />
-          </button>
+          {project.projectUrl ? (
+            <div className="grid grid-cols-2 gap-2">
+              <button
+                onClick={() => onViewDetail(project)}
+                className="w-full py-2.5 bg-slate-50 hover:bg-slate-100 text-slate-800 rounded-xl font-display text-xs sm:text-sm font-bold border-2 border-slate-900 shadow-[2px_2px_0px_0px_#0f172a] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[1px_1px_0px_0px_#0f172a] transition-all flex items-center justify-center gap-1 cursor-pointer"
+              >
+                <span>Studi Kasus</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </button>
+
+              <a
+                href={project.projectUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`w-full py-2.5 rounded-xl font-display text-xs sm:text-sm font-bold border-2 border-slate-900 shadow-[2px_2px_0px_0px_#0f172a] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[1px_1px_0px_0px_#0f172a] transition-all flex items-center justify-center gap-1.5 cursor-pointer ${
+                  deployment.type === 'production'
+                    ? 'bg-emerald-400 hover:bg-emerald-300 text-slate-950'
+                    : 'bg-white hover:bg-amber-100 text-slate-800'
+                }`}
+                title={project.projectUrl}
+              >
+                <ExternalLink className="w-3.5 h-3.5" />
+                <span>{deployment.type === 'production' ? 'Live .com' : 'Live Demo'}</span>
+              </a>
+            </div>
+          ) : (
+            <button
+              onClick={() => onViewDetail(project)}
+              className="w-full py-2.5 bg-slate-50 hover:bg-brand-yellow/35 text-slate-800 hover:text-slate-950 rounded-xl font-display text-sm font-bold border-2 border-slate-900 hover:shadow-[3px_3px_0px_0px_#0f172a] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 cursor-pointer"
+            >
+              <span>Detail Case Study</span>
+              <ArrowUpRight className="w-4 h-4" />
+            </button>
+          )}
         </div>
       </div>
     </div>
